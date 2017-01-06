@@ -1,0 +1,12 @@
+applications:
+- path: .
+  memory: 64M
+  instances: 1
+  domain: mybluemix.net
+  name: strong01
+  host: strong01
+  disk_quota: 1024M
+  env:
+    APP_HOME_URL: /application.nsf
+    APP_PRELOAD_DB: application.nsf
+  buildpack: xpages_buildpack
